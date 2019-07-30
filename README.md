@@ -44,7 +44,7 @@ You can add in a `placeholder` attribute so that the input boxes will tell the u
 
 Now we need to add to the POST method of the `/add` route we have created
 in `app.py`. If the request is a POST request, we want to use the form data to add a new student to the database. Afterwards, you can still return the same template as before.
-
+stude
 *Hint*: Look at the `add_student()` method in `databases.py`.
 
 *Hint*: The `name` of the form element corresponds to the value of that
@@ -59,7 +59,7 @@ In `student.html`, add a `<form>` tag that has one `<input>` element
 with `type="submit"` and `value="delete"`. Edit the form element
 so that when submitted, it makes a POST to `/delete/<student_id>`, where
 the `student_id` is of the article currently being viewed. 
-
+"
 *Hint*: You will need to add an `action` attribute to `<form>` so that it directs to the right URL. For example, if we wanted the form to take us to the home page, in the `form` tag we would write: `<form method="/delete/<student_id>`
 
 ### Part 2
